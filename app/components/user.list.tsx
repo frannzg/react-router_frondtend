@@ -65,7 +65,7 @@ const UserList: React.FC = () => {
               <tr
                 key={user._id}
                 onClick={() => setSelectedUser(user)}
-                className="hover:bg-green-50 cursor-pointer border-b border-gray-200 bg-green-100"
+                className="hover:bg-gray-300 cursor-pointer border-b border-gray-200 bg-gray-400"
               >
                 <td className="px-6 py-4">{user.name}</td>
                 <td className="px-6 py-4">{user.email}</td>

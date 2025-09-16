@@ -48,7 +48,7 @@ const UserEditModal: React.FC<UserEditModalProps> = ({ user, onClose, onUserUpda
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50">
       {/* Overlay semitransparente */}
-      <div className="fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm"></div>
+      <div className="fixed inset-0  bg-opacity-30 backdrop-blur-sm"></div>
 
       {/* Modal */}
       <div className="bg-white rounded-lg shadow-2xl w-[400px] z-50 transform transition-all">
@@ -75,7 +75,7 @@ const UserEditModal: React.FC<UserEditModalProps> = ({ user, onClose, onUserUpda
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 required
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent text-black"
               />
             </div>
 
@@ -88,7 +88,7 @@ const UserEditModal: React.FC<UserEditModalProps> = ({ user, onClose, onUserUpda
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent text-black"
               />
             </div>
 
@@ -101,7 +101,7 @@ const UserEditModal: React.FC<UserEditModalProps> = ({ user, onClose, onUserUpda
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent text-black"
               />
             </div>
 
@@ -115,7 +115,7 @@ const UserEditModal: React.FC<UserEditModalProps> = ({ user, onClose, onUserUpda
                   value={age}
                   onChange={(e) => setAge(Number(e.target.value))}
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent text-black"
                 />
               </div>
 
@@ -128,7 +128,7 @@ const UserEditModal: React.FC<UserEditModalProps> = ({ user, onClose, onUserUpda
                   value={birthdate}
                   onChange={(e) => setBirthdate(e.target.value)}
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent text-black"
                 />
               </div>
             </div>
@@ -152,7 +152,7 @@ const UserEditModal: React.FC<UserEditModalProps> = ({ user, onClose, onUserUpda
           <button
             type="button"
             onClick={onClose}
-            className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 
+            className="px-4 py-2 bg-red-600 text-white text-sm font-medium rounded-md hover:bg-red-700 
             transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
           >
             Cancelar
@@ -160,7 +160,7 @@ const UserEditModal: React.FC<UserEditModalProps> = ({ user, onClose, onUserUpda
           <button
             type="submit"
             onClick={handleSubmit}
-            className="px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-md hover:bg-green-700 
+            className="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-md hover:bg-blue-700 
             transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
           >
             Guardar
