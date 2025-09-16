@@ -10,36 +10,33 @@ export default function Menu() {
   };
 
   return (
-    <nav style={{ backgroundColor: "blue", padding: "10px", display: "flex", gap: "10px" }}>
+    <nav className="bg-green-600 p-4 flex gap-4">
       <NavLink
         to="/"
-        style={({ isActive }) => ({
-          ...linkStyle,
-          color: isActive ? "white" : "white",
-          backgroundColor: isActive ? "#555" : "transparent",
-        })}
+        className={({ isActive }) =>
+          `px-4 py-2 font-bold text-white rounded transition-colors duration-300
+          ${isActive ? 'bg-green-800' : 'hover:bg-green-700'}`
+        }
       >
         Inicio
       </NavLink>
 
       <NavLink
         to="/contact"
-        style={({ isActive }) => ({
-          ...linkStyle,
-          color: isActive ? "white" : "white",
-          backgroundColor: isActive ? "#555" : "transparent",
-        })}
+        className={({ isActive }) =>
+          `px-4 py-2 font-bold text-white rounded transition-colors duration-300
+          ${isActive ? 'bg-green-800' : 'hover:bg-green-700'}`
+        }
       >
         Contact
       </NavLink>
 
       <NavLink
         to="/user"
-        style={({ isActive }) => ({
-          ...linkStyle,
-          color: isActive ? "white" : "white",
-          backgroundColor: isActive ? "#555" : "transparent",
-        })}
+        className={({ isActive }) =>
+          `px-4 py-2 font-bold text-white rounded transition-colors duration-300
+          ${isActive ? 'bg-green-800' : 'hover:bg-green-700'}`
+        }
       >
         Users
       </NavLink>

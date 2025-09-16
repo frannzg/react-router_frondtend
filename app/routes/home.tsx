@@ -14,7 +14,7 @@ export default function Home() {
   return (
 
     <div style={{ textAlign: "center", marginTop: "50px", padding: "20px" }}>
-      <h1 style={{ fontSize: "2.5rem", color: "darkblue", marginBottom: "20px" }}>
+      <h1 style={{ fontSize: "2.5rem", color: "green", marginBottom: "20px" }}>
         👋 Bienvenido a la APP de frannzg
       </h1>
 
