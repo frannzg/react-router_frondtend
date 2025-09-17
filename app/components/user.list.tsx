@@ -3,6 +3,7 @@ import axios from "axios";
 import UserModal from "../../app/components/use.create.modal";
 import UserEditModal from "../../app/components/use.edit.modal"; 
 import CreateIcon from "../../public/plus.svg";
+import DeleteUserButton from "./delete.user.button";
 
 interface IUser {
   _id: string;
@@ -58,6 +59,7 @@ const UserList: React.FC = () => {
               <th className="px-6 py-3 text-left">EDAD</th>
               <th className="px-6 py-3 text-left">FECHA DE NACIMIENTO</th>
               <th className="px-6 py-3 text-center">ACTIVO</th>
+              <th className="px-6 py-3 text-center">ACCIONES</th>
             </tr>
           </thead>
           <tbody>
@@ -79,6 +81,9 @@ const UserList: React.FC = () => {
                     ${user.isActive ? 'bg-green-500 text-white' : 'bg-red-500 text-white'}`}>
                     {user.isActive ? 'Activo' : 'Inactivo'}
                   </span>
+                </td>
+                <td className="px-6 py-4">
+                  <DeleteUserButton userId={user._id} onUserDeleted={fetchUsers} />
                 </td>
               </tr>
             ))}
