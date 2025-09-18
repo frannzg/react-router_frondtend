@@ -40,6 +40,15 @@ export default function Menu() {
       >
         Users
       </NavLink>
+      <NavLink
+        to="/info"
+        className={({ isActive }) =>
+          `px-4 py-2 font-bold text-white rounded transition-colors duration-300
+          ${isActive ? 'bg-green-800' : 'hover:bg-green-700'}`
+        }
+      >
+        Info
+      </NavLink>
     </nav>
   );
 }
